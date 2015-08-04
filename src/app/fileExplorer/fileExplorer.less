@@ -1,0 +1,32 @@
+
+.file-explorer {
+  height: 100%;
+
+  .file-list {
+    height: ~"calc(100% - 60px)";
+    overflow: auto;
+
+    li {
+      border-bottom: 1px solid lightgray;
+      font-size: 14px;
+      height: 35px;
+      line-height: 35px;
+      padding: 0 1.5%;
+  
+      > span:last-child {
+        margin-left: 5px;
+      }
+    }
+  }
+
+  .file-ctrl {
+    border-top: 1px solid lightGray;
+    a {
+      background-color: #cccccc;
+      border-color: #bbbbbb;
+      width: ~"calc(100% - 6px)";
+      margin: 0 auto 5px auto;
+      /*color: #ffffff;*/
+    }
+  }
+}

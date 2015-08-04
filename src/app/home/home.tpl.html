@@ -1,0 +1,22 @@
+<form class="home">
+  <div class="form-group text-area">
+    <textarea class="form-control" ng-model="fileContent">
+    </textarea>
+  </div>
+
+  <div class="form-group">
+     <input class="form-control" type="password" ng-model="secret" />
+  </div>
+  
+  <div class="form-group">
+    <a href class="btn btn-default" ui-sref="fileExplorer">Load</a>
+
+    <button type="button" class="btn btn-default"
+            ng-click="encode()"
+            ng-disabled="!canEncode()">Encode</button>
+
+    <button type="button" class="btn btn-default"
+            ng-click="decode()"
+            ng-disabled="!canEncode()">Decode</button>
+  </div>
+</form>

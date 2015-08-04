@@ -1,0 +1,19 @@
+
+<div class="file-explorer">
+  <div class="file-list">
+    <ul class="list-unstyled"> 
+      <li ng-repeat="fileEntry in fileExplorer.fileEntries"
+          ng-click="openDir(fileEntry)">
+        <span ng-if="fileEntry.isDirectory"
+              class="glyphicon glyphicon-folder-close"></span>
+        <span ng-bind="fileEntry.name"></span>
+      </li>
+    </ul>
+  </div>
+  <div class="file-ctrl">
+    <div class="cur-dir">
+      {{ currentDir() }}
+    </div>
+    <a href ui-sref="home" class="btn btn-default btn-block">Cancel</a>
+  </div>
+</div>

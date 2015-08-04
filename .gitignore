@@ -1,0 +1,11 @@
+platforms/
+plugins/
+node_modules/
+*.swp
+.tmp/
+www/
+vendor/
+
+# jasmine
+.grunt
+_SpecRunner.html
